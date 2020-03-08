@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Diagnostics;
-using System.IO;
 
 namespace OpenClosedPrinciple
 {
-
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
-            var j = new JurnalAfter();
-            j.AddEntry("Tom Hank");
-            j.AddEntry("Chevrolet Lacetti");
-            Console.WriteLine(j);
+            var apple = new Product("Apple", Color.Green, Size.Small);
+            var tree = new Product("Tree", Color.Green, Size.Large);
+            var house = new Product("House", Color.Blue, Size.Large);
 
-            var fm = new FileManager();
-            var fileName = @"C:\Users";
-            fm.SaveToFile(j, fileName);
-            Process.Start(fileName);
+            Product[] products = { apple, tree, house };
+            var pf = new ProductFilter();
+            Console.WriteLine("Green Products (Old):");
+
+            foreach (var p in pf.FilterByColor(products, Color.Green))
+            {
+                Console.WriteLine($" - {p.Name} is green");
+            }
         }
     }
 }
