@@ -1,10 +1,7 @@
 ﻿namespace OpenClosedPrinciple
 {
-    partial class Program
+    public enum Color
     {
-        public enum Color
-        {
-            Red,Green,Blue
-        }
+        Red, Green, Blue
     }
 }

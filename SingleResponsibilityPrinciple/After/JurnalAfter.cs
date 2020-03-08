@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OpenClosedPrinciple
+namespace SingleResponsibilityPrinciple
 {
     public class JurnalAfter
     {

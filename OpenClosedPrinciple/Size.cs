@@ -1,10 +1,7 @@
 ﻿namespace OpenClosedPrinciple
 {
-    partial class Program
+    public enum Size
     {
-        public enum Size
-        {
-            Small, Medium, Large, Big
-        }
+        Small, Medium, Large, Big
     }
 }

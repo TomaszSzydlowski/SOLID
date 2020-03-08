@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace OpenClosedPrinciple
+namespace SingleResponsibilityPrinciple
 {
     public class FileManager
     {

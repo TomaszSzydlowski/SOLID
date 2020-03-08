@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 
-namespace OpenClosedPrinciple
+namespace SingleResponsibilityPrinciple
 {
 
     class Program
